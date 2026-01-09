@@ -1,0 +1,21 @@
+{
+  "$schema": "https://code.claude.com/schemas/hooks-v2.json",
+  "version": "2.1",
+  "hooks": [
+    {
+      "event": "PreToolUse",
+      "matcher": {
+        "type": "exact",
+        "conditions": {
+          "tool": "Write"
+        }
+      },
+      "actions": [
+        {
+          "type": "notification",
+          "message": "구현 시작 전 - 두 PM 에이전트의 분석 결과를 참고하세요"
+        }
+      ]
+    }
+  ]
+}
