@@ -166,8 +166,8 @@ for round in range(1, 21):
 
 토론 완료 후 다음 파일 생성:
 
-1. `planning-debate-[timestamp].md` - 전체 토론 기록
-2. `prd-[project-name].md` - 최종 PRD
-3. `risk-register-[project-name].md` - 위험 레지스터
+1. `.planning/debate-[timestamp].md` - 전체 토론 기록
+2. `.planning/prd-[project-name].md` - 최종 PRD
+3. `.planning/risks-[project-name].md` - 위험 레지스터
 
-모든 파일은 프로젝트 루트의 `.claude/planning/` 디렉토리에 저장.
+모든 파일은 현재 작업 디렉토리의 `.planning/` 디렉토리에 저장.

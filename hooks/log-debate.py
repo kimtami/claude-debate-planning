@@ -13,8 +13,9 @@ from pathlib import Path
 
 def get_log_dir():
     """로그 디렉토리 경로를 반환합니다."""
-    project_dir = os.environ.get("CLAUDE_PROJECT_DIR", ".")
-    log_dir = Path(project_dir) / ".claude" / "planning"
+    # 현재 작업 디렉토리 기준으로 .planning 디렉토리 생성
+    cwd = os.environ.get("CLAUDE_WORKING_DIR", os.getcwd())
+    log_dir = Path(cwd) / ".planning"
     log_dir.mkdir(parents=True, exist_ok=True)
     return log_dir
 

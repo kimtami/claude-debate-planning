@@ -72,7 +72,7 @@ Use the pm-critic subagent to critically evaluate the optimist's proposal:
 
 토론이 완료되면:
 
-1. `.claude/planning/` 디렉토리 생성
+1. `.planning/` 디렉토리 생성 (현재 작업 디렉토리 기준)
 2. 토론 기록 저장
 3. 최종 PRD 생성
 4. 위험 레지스터 생성
@@ -82,15 +82,17 @@ Use the pm-critic subagent to critically evaluate the optimist's proposal:
 ## 예시 사용
 
 ```
-/debate-planning 우리 서비스에 AI 챗봇 기능을 추가하고 싶습니다. 
+/debate-planning 우리 서비스에 AI 챗봇 기능을 추가하고 싶습니다.
 고객 지원 자동화가 목표이고, 3개월 내 출시를 원합니다.
 ```
 
 ## 출력 파일
 
-- `.claude/planning/debate-[timestamp].md` - 전체 토론 기록
-- `.claude/planning/prd-[project].md` - 최종 PRD (변경점 포함)
-- `.claude/planning/risks-[project].md` - 위험 레지스터
+현재 작업 디렉토리에 `.planning/` 폴더가 생성됩니다:
+
+- `.planning/debate-[timestamp].md` - 전체 토론 기록
+- `.planning/prd-[project].md` - 최종 PRD (변경점 포함)
+- `.planning/risks-[project].md` - 위험 레지스터
 
 ---
 
